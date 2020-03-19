@@ -1,0 +1,6 @@
+.title {
+    @include text-title;
+    display: flex;
+    justify-content: center;
+    padding-top: 34px;
+}

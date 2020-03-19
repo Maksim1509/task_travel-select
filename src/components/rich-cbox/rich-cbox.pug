@@ -1,0 +1,9 @@
+include ./checkbox/checkbox
+
+mixin rich-cbox(data)
+    .rich-cbox
+        .rich-cbox__head
+            .rich-cbox__checkbox
+                +checkbox({title: '', class: data.classes, mini: true, id: data.id })
+            label(for=data.id).rich-cbox__title #{data.title}<em class="rich-cbox__requared">#{data.required}</em>
+        label(for=data.id).rich-cbox__discription= data.discription

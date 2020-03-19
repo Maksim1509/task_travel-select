@@ -1,0 +1,15 @@
+/*FAMILIES*/
+$museo-bold: 'Museo-Black', sans-serif;
+$museo-semibold: 'Museo-Bold', sans-serif; 
+$museo-reg: 'Museo', sans-serif;
+/*COLORS*/
+$yellow:#FFD241;
+
+/*MIXINS*/
+@mixin text-title {
+    font-family: $museo-bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    font-weight: bold;
+}

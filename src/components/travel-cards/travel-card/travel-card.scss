@@ -1,0 +1,70 @@
+.travel-card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding-bottom: 30px;
+    font-family: 'Museo-Sans-Bold-Cyrl', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    color: #000000;
+}
+.travel-card__image {
+    position: relative;
+    height: 195px;
+}
+.travel-card__img {
+    max-width: 340px;
+    width: 100%;
+}
+.travel-card__price {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $yellow;
+    font-family: $museo-bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+}
+.travel-card__country {
+    display: inline-block;
+    color: #C5B223;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.travel-card__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $museo-bold;
+    display: inline-block;
+}
+.travel-card__route {
+    color: #8C8C8C;
+    line-height: 13px;
+}
+.travel-card__discrip {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+.travel-card__lang {
+    font-style: normal;
+}
+.travel-card__air {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    background: #CB0037;
+    border-radius: 3px;
+    width: 130px;
+    height: 17px;
+    color: #FFFFFF;
+}

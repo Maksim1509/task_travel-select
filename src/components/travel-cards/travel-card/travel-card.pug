@@ -1,0 +1,14 @@
+mixin travel-card(card)
+    section.travel-card
+        .travel-card__image
+            img.travel-card__img(src=card.img, alt="image")
+            span.travel-card__price= card.price
+        h3.travel-card__country= card.country
+        h2.travel-card__title= card.title
+        p.travel-card__route= card.route
+        .travel-card__discrip #{card.days} <em class="travel-card__lang">#{card.lang}</em>
+        .travel-card__discrip= card.dates
+        if card.air
+            .travel-card__air Авиаперелет включен!
+        
+        

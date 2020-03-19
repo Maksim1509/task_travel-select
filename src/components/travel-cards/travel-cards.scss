@@ -1,0 +1,14 @@
+.travel-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    padding-top: 30px;
+    padding-bottom: 33px;
+}
+
+.travel-card:last-child {
+    padding-bottom: 0;
+}

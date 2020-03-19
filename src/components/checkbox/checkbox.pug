@@ -1,0 +1,12 @@
+mixin checkbox(data)
+    .checkbox__container
+        label.checkbox__title= data.title
+            input.checkbox(type="checkbox", name=data.name, value=data.value, id=data.id)
+            .checkbox__custom(class=data.class)
+                .checkbox--checked
+                    if (data.mini)
+                        svg(width="11" height="7")
+                            polyline(points="1,2 5,6 10,2" fill="none", stroke="#FFD241" stroke-width="2")
+                    else
+                        svg(width="19" height="8")
+                            polyline(points="1,1 9,6 17,1" fill="none", stroke="#FFD241" stroke-width="3")

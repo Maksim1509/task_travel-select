@@ -1,0 +1,27 @@
+.submit-btn {
+    box-sizing: border-box;
+    width: 280px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFD241;
+    border-radius: 29.5px;
+    border: 2px solid #FFD241;
+    padding: 0 30px;
+    font-family: $museo-semibold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    &:hover {
+        background-color: #ffffff;
+    }  
+}
+.submit-btn__arrow {
+    line-height: 14px;
+    font-size: 12px;
+}
