@@ -10,7 +10,7 @@ module.exports = {
     entry: './index.js',
     output: {
         filename: '[name].[hash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
     },
     optimization: {
         splitChunks: {
@@ -27,11 +27,11 @@ module.exports = {
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, 'src/static'),
-                to: path.resolve(__dirname, 'dist'),
+                to: path.resolve(__dirname, 'docs'),
             },
             {
                 from: path.resolve(__dirname, 'src/assets/img'),
-                to: path.resolve(__dirname, 'dist/images'),
+                to: path.resolve(__dirname, 'docs/images'),
             },
         ]),
         new MiniCssExtractPlugin({
