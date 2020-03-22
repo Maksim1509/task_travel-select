@@ -52,11 +52,30 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                     'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            config: { path: 'postcss.config.js' },
+                        },
+                    },
+                ],
             },
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            config: { path: 'postcss.config.js' },
+                        },
+                    },
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|jpg|svg|gif)/,
@@ -70,9 +89,10 @@ module.exports = {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 options: {
+                    name: "[name].[ext]",
                     outputPath: 'fonts' 
                 },
             },
         ]
-    }
+    },
 };

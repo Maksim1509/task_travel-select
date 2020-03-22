@@ -1,0 +1,82 @@
+.test-conteiner {
+    margin: 0 auto;
+    padding: 100px 45px;
+    box-sizing: border-box;
+    width: 375px;
+    height: 745px;
+    background-color: #FFD241;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 40px;
+    max-height: 540px;
+    background: #FFFFFF;
+    font-family: $museo-semibold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #010101;
+    border-radius: 29.5px;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+.dropdown__field {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    cursor: pointer;
+}
+.dropdown__dropbox, .dropdown__dropbox-content {
+    transition: 3s;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+}
+.dropdown__dropbox {
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+.dropdown__dropbox-title {
+    font-family: $museo-bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.dropdonw__dropbox--show {
+    display: block;
+}
+.dropdown__arrow--reverse {
+    transform: rotate(180deg);
+}
+.dropdown__dropbox-content {
+    font-family: $museo-semibold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 20px;
+}
+.dropdown__dropbox-content-item {
+    display: block;
+    padding-left: 13px;
+    box-sizing: border-box;
+    &:hover {
+        box-sizing: border-box;
+        background: rgba(196, 196, 196, 0.3);
+        border-radius: 15px;
+    }
+}
