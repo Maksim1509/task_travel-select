@@ -1,13 +1,15 @@
 /*FAMILIES*/
-$museo-bold: 'Museo-Black', sans-serif;
-$museo-semibold: 'Museo-Bold', sans-serif; 
-$museo-reg: 'Museo', sans-serif;
+$museo: 'MuseoSans', sans-serif;
+$museo_0: 'MuseoSans_0', sans-serif;
+$museo_1: 'MuseoSans_1', sans-serif;
+$museo_2: 'MuseoSans_2', sans-serif;
+$museo_3: 'MuseoSans_3', sans-serif;
 /*COLORS*/
 $yellow:#FFD241;
 
 /*MIXINS*/
 @mixin text-title {
-    font-family: $museo-bold;
+    font-family: $museo_3;
     font-size: 36px;
     line-height: 43px;
     color: #000000;

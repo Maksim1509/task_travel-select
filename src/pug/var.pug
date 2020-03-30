@@ -3,7 +3,7 @@ block variables
 -
    const card1 = {
                     img: './images/toskanaMin.jpg',
-                    price: 'от 118 112 Р',
+                    price: 'от 118 112 ₽',
                     country: 'италия',
                     title: 'Под небом Тосканы',
                     route:  'Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)',
@@ -15,7 +15,7 @@ block variables
 -
    const card2 = {
                     img: './images/islandMin.jpg',
-                    price: '140 715 Р',
+                    price: '140 715 ₽',
                     country: 'ИСЛАНДИЯ',
                     title: 'Майские каникулы в Исландии',
                     route:  'Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль — Arnarstapi — Рейкьявик',
@@ -27,7 +27,7 @@ block variables
 -
    const card3 = {
                     img: './images/turkeyMin.jpg',
-                    price: '37 302 Р',
+                    price: '32 302 ₽',
                     country: 'ТУРЦИЯ',
                     title: 'Открытие Турции',
                     route:  'Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул',
@@ -71,6 +71,12 @@ block variables
 
 - const submitBtn = { value: 'ОТПРАВИТЬ'}
 
-- const dropdownTest = { id: 'dropdown-coutry', name: 'Страна' }
+-
+    var continents = ['Южная Америка', 'Северная Америка', 'Арктика и Антарктика', 'Африка', 'Австралия и Океания',
+        'Европа', 'Россия', 'Азия']
+-
+    var countries = ['Аргентина', 'Бразилия', 'Перу', 'Уругвай', 'Чили',
+        'Эквадор']
+- const dropdownTest = { id: 'dropdown-coutry', name: 'Страна', continents,  countries, all: 'все туры на континенте' }
 
 

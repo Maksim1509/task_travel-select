@@ -1,0 +1,138 @@
+.date-dropdown {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 29px 12px 25px;
+    width: 283px;
+    min-height: 40px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 29.5px;
+    flex-wrap: wrap;
+}
+.date-dropdown__field {
+    width: 80%;
+    font-family: $museo_1;
+    color: #000000;
+    font-size: 12px;
+    line-height: 14px;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+    cursor: pointer;
+    &::placeholder {
+        font-family: $museo_1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+.date-dropdown__text { 
+    font-family: $museo_1;
+    align-self: center;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    order: 2;
+    display: none;
+    &--show {
+        display: block;
+    }
+}
+.datepicker-inline {
+    order: 1;
+    display: none;
+}
+.datepicker-inline--show {
+    display: block;
+}
+.datepicker {
+    font-family: $museo_1;
+    color: #000000;
+    width: 100%;
+    order: -1;
+    border: none;
+}
+
+.datepicker--nav {
+    border: none;
+    padding: 0;
+    min-height: auto;
+    margin-top: 24px;
+}
+.datepicker--nav-action {
+    width: auto;
+}
+.datepicker--nav-title {
+    font-family: $museo_2;
+    font-size: 14px;
+    line-height: 17px;
+}
+.datepicker--nav-title i {
+    color: #000000;
+}
+div[data-action='prev'] img {
+    transform: rotate(90deg);
+}
+div[data-action='next'] img {
+    transform: rotate(-90deg);
+}
+.datepicker--days-names {
+    margin-top: 19px;
+    margin-bottom: 15px;
+}
+.datepicker--day-name {
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.datepicker--cell {
+    font-size: 12px;
+    line-height: 35px;
+    &.-range-from- {
+        background: rgba(196, 196, 196, 0.3);
+        position: relative;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: $yellow;
+            z-index: -1;
+            border-radius: 15px;
+        }
+    }
+    &.-range-to- {
+        background: rgba(196, 196, 196, 0.3);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: $yellow;
+            z-index: -1;
+            border-radius: 15px;
+        }
+    }
+    &.-in-range- {
+        background: rgba(196, 196, 196, 0.3);
+    }
+    &.-selected- {
+        &.-focus- {
+            background: rgba(196, 196, 196, 0.3);
+        }
+    }
+}
+
+.datepicker--cell-day ~ .-in-range- {
+    &:last-child {
+        color: red;
+    }
+}

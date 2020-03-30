@@ -4,67 +4,9 @@ mixin dropdown(data)
             span.dropdown__field-name= data.name
             img(src="./images/arrowDrop.svg", alt="ddd", srcset="").dropdown__arrow
         ul.dropdown__dropbox
-            li.dropdown__dropbox-title Южная Америка
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Северная Америка
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Арктика и Антарктика
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Африка
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Австралия и Океания
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Европа
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Россия
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Аргентина
-                    li.dropdown__dropbox-content-item Бразилия
-                    li.dropdown__dropbox-content-item Перу
-                    li.dropdown__dropbox-content-item Уругвай
-                    li.dropdown__dropbox-content-item Чили
-                    li.dropdown__dropbox-content-item Эквадор
-            li.dropdown__dropbox-title Азия
-                ul.dropdown__dropbox-content
-                    li.dropdown__dropbox-content-item Вьетнам
-                    li.dropdown__dropbox-content-item Тайланд
-                    li.dropdown__dropbox-content-item Гоа
-                    li.dropdown__dropbox-content-item Индонезия
-                    li.dropdown__dropbox-content-item Бали
-                    li.dropdown__dropbox-content-item Китай
+            each item in data.continents
+                li.dropdown__dropbox-title= item
+                    ul.dropdown__dropbox-content
+                        each country in data.countries
+                            li.dropdown__dropbox-content-item= country
+                        li.dropdown__dropbox-content-total= data.all

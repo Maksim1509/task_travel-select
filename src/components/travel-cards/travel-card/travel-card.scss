@@ -3,9 +3,8 @@
     flex-direction: column;
     width: 340px;
     padding-bottom: 30px;
-    font-family: 'Museo-Sans-Bold-Cyrl', serif;
+    font-family: $museo_2;
     font-style: normal;
-    font-weight: 600;
     font-size: 9px;
     line-height: 11px;
     color: #000000;
@@ -23,7 +22,7 @@
     left: 0;
     bottom: 0;
     background-color: $yellow;
-    font-family: $museo-bold;
+    font-family: $museo_3;
     font-size: 18px;
     line-height: 22px;
     display: flex;
@@ -42,7 +41,7 @@
 .travel-card__title {
     font-size: 18px;
     line-height: 22px;
-    font-family: $museo-bold;
+    font-family: $museo_2;
     display: inline-block;
 }
 .travel-card__route {
