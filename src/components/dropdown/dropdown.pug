@@ -4,9 +4,13 @@ mixin dropdown(data)
             span.dropdown__field-name= data.name
             img(src="./images/arrowDrop.svg", alt="ddd", srcset="").dropdown__arrow
         ul.dropdown__dropbox
-            each item in data.continents
-                li.dropdown__dropbox-title= item
-                    ul.dropdown__dropbox-content
-                        each country in data.countries
-                            li.dropdown__dropbox-content-item= country
-                        li.dropdown__dropbox-content-total= data.all
+            if data.countries
+                each item in data.continents
+                    li.dropdown__dropbox-title= item
+                        ul.dropdown__dropbox-content
+                            each country in data.countries
+                                li.dropdown__dropbox-content-item= country
+                            li.dropdown__dropbox-content-total= data.all
+            else 
+                each item in data.continents
+                    li.dropdown__dropbox-title--short= item
