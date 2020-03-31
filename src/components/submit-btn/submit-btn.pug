@@ -1,5 +1,5 @@
 mixin submit-btn(data)
-    .submit-btn__wrap
+    .submit-btn__wrap(class=data.empty)
         button(type="submit").submit-btn
             span.submit-btn__name= data.value
             .submit-btn__arrow

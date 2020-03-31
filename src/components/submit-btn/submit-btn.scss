@@ -17,6 +17,7 @@
     cursor: pointer;
     user-select: none;
     outline: none;
+    text-transform: uppercase;
     &:hover {
         background-color: #ffffff;
     }  
@@ -24,4 +25,20 @@
 .submit-btn__arrow {
     line-height: 14px;
     font-size: 12px;
+}
+
+.submit-btn__wrap--empty {
+    &>.submit-btn {
+        background: transparent;
+        border: 1px solid #000000;
+        justify-content: center;
+        &:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }  
+        &>.submit-btn__arrow {
+            display: none;
+        }
+    }
+    
 }
