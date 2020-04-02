@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import scrollbar from 'malihu-custom-scrollbar-plugin';
+
 const dropdownController = () => {   
     const dropdownColl = document.querySelectorAll('.dropdown__field');
 
@@ -9,7 +12,7 @@ const dropdownController = () => {
             const dropbox = currentDropdown.querySelector('.dropdown__dropbox');
             dropbox.classList.toggle('dropdown__dropbox--show');
             arrow.classList.toggle('dropdown__arrow--reverse');
-
+            currentDropdown.classList.toggle('dropdown--open');
             const dropboxTitleColl = dropbox.querySelectorAll('.dropdown__dropbox-title');
 
             if (dropbox.querySelector('.dropdown__dropbox-content')) {
@@ -35,3 +38,5 @@ const dropdownController = () => {
     });
 };
 dropdownController();
+
+$('.dropdown__dropbox').mCustomScrollbar();

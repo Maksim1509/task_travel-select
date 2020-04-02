@@ -8,6 +8,7 @@
 }
 
 .dropdown {
+    position: relative;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -23,6 +24,10 @@
     color: #010101;
     border-radius: 29.5px;
     padding: 0 30px;
+    &--open {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
 .dropdown__field {
     box-sizing: border-box;
@@ -34,22 +39,35 @@
     cursor: pointer;
 }
 .dropdown__dropbox, .dropdown__dropbox-content {
+    background-color: #FFFFFF;
+    width: 100%;
     transition: 3s;
     display: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 16px;
 }
+
+
 .dropdown__dropbox {
-    overflow-y: scroll;
+    box-sizing: border-box;
     padding-bottom: 30px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1;
+    border-bottom-left-radius: 29.5px;
+    border-bottom-right-radius: 29.5px;
+    max-height: 500px;
+    padding: 30px 0;
+    padding-right: 32px;
+    padding-left: 30px;
 }
 .dropdown__dropbox-title {
     font-family: $museo_2;
     font-style: normal;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 30px;
     cursor: pointer;
 }
 
