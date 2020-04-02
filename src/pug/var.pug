@@ -36,8 +36,10 @@ block variables
                     dates: '28.04.19 - 05.05.19и еще 3 даты',
                     air: true,
                 }
+-   const mobilePattern = '[0-9]{1}-[0-9]{3}-[0-9]{5}'
+
 -   const inputName = { label: 'Имя', name: 'firstname', id: 'firstname-field', required: '*' }
--   const inputModile = { label: 'ТЕЛЕФОН', name: 'mobile-number', id: 'mobule-number-field', placeholder: "+7___ ___ __ __", required: '' }
+-   const inputModile = { type: 'tel', pattern: mobilePattern, label: 'ТЕЛЕФОН', name: 'mobile-number', id: 'mobule-number-field', placeholder: "+7___ ___ __ __", required: '' }
 -   const inputCountry = { label: 'КУДА И КОГДА ХОТИТЕ ПОЕХАТЬ?', name: 'country', id: 'country-field', placeholder: "Континет, страна или город", required: '*', req: 'required' }
 -   const inputDate = { label: 'КОГДА?', name: 'date', id: 'date-field', placeholder: 'Даты или временной  интервал' }
 
@@ -73,15 +75,17 @@ block variables
 - const submitBtnEmpty = { value: 'Найти', empty: 'submit-btn__wrap--empty' }
 
 -
-    var continents = ['Южная Америка', 'Северная Америка', 'Арктика и Антарктика', 'Африка', 'Австралия и Океания',
+    const continents = ['Южная Америка', 'Северная Америка', 'Арктика и Антарктика', 'Африка', 'Австралия и Океания',
         'Европа', 'Россия', 'Азия']
 -
-    var countries = ['Аргентина', 'Бразилия', 'Перу', 'Уругвай', 'Чили',
+    const countries = ['Аргентина', 'Бразилия', 'Перу', 'Уругвай', 'Чили',
         'Эквадор']
 - const dropdownTest = { id: 'dropdown-coutry', name: 'Страна', continents,  countries, all: 'все туры на континенте' }
 
 -
-    var typesTravels = ['Активный', 'Майские', 'На авто', 'На корабле', 'Новый год', 'Поход', 'Серфинг', 'Эксклюзив',
+    const typesTravels = ['Активный', 'Майские', 'На авто', 'На корабле', 'Новый год', 'Поход', 'Серфинг', 'Эксклюзив',
             'Экскурсионный', 'Экспедиция']
 
 - const dropdownTypeTrevel = { id: 'dropdown-type-travel', name: 'Тип путешествия', countries: 0, continents: typesTravels }
+
+- const navMenuItems = ['ПУТЕШЕСТВИЯ', 'О НАС', 'ОТЗЫВЫ', 'БЛОГ']

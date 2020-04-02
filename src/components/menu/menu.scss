@@ -1,0 +1,48 @@
+.menu {
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    background: $yellow;
+    width: 100%;
+    min-width: 320px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu--show {
+    right: 0;
+    left: auto;
+}
+.page__main--hide {
+    display: none;
+}
+
+.menu__icon-close {
+    width: 24.75px;
+    height: 24.75px;
+    align-self: flex-end;
+    margin-right: 19px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+.menu__dropdowns {
+    width: 280px;
+    margin: 55px 0 30px;;
+}
+.menu__dropdown {
+    margin-bottom: 14px;
+}
+.menu__nav {
+    margin-bottom: 104px;
+}
+.menu__tel {
+    font-family: $museo_3;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #141414;
+}
+.menu__submit {
+    margin: 24px 0 44px;
+}

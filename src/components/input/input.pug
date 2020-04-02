@@ -2,6 +2,6 @@ mixin input(data)
     .input
         label(for=data.id).input__label #{data.label}<em class="input__label--requared">#{data.required}</em>
         if (data.required)
-            input.input__field(type="text", name=data.name, id=data.id, placeholder=data.placeholder, requared)
+            input.input__field(type=data.type, pattern=data.pattern name=data.name, id=data.id, placeholder=data.placeholder, requared)
         else
-            input.input__field(type="text", name=data.name, id=data.id, placeholder=data.placeholder)
+            input.input__field(type=data.type, pattern=data.pattern name=data.name, id=data.id, placeholder=data.placeholder)
