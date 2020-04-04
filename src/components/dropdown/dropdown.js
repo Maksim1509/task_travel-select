@@ -1,5 +1,4 @@
-import $ from 'jquery';
-import scrollbar from 'malihu-custom-scrollbar-plugin';
+import SimpleBar from 'simplebar';
 
 const dropdownController = () => {   
     const dropdownColl = document.querySelectorAll('.dropdown__field');
@@ -22,7 +21,6 @@ const dropdownController = () => {
                         dropboxContent.classList.toggle('dropdown__dropbox--show');
                         dropboxContent.addEventListener('click', (e) => {
                             nameField.textContent = e.target.textContent;
-                            e.stopPropagation();
                         });
                     });
                 });
@@ -39,4 +37,4 @@ const dropdownController = () => {
 };
 dropdownController();
 
-$('.dropdown__dropbox').mCustomScrollbar();
+document.querySelectorAll('.dropdown__dropbox').forEach((elem) => new SimpleBar(elem, { scrollbarMaxSize: 351 }));

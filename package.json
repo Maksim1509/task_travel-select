@@ -41,6 +41,6 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "jquery": "^3.4.1",
-    "malihu-custom-scrollbar-plugin": "^3.1.5"
+    "simplebar": "^5.1.0"
   }
 }
