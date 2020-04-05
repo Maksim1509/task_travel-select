@@ -1,26 +1,35 @@
 .travel-card {
     display: flex;
-    flex-direction: column;
     width: 340px;
-    padding-bottom: 30px;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-bottom: 26px;
     font-family: $museo_2;
     font-style: normal;
     font-size: 9px;
     line-height: 11px;
     color: #000000;
+    @media (min-width: 820px) {
+        width: 380px;
+    }
+}
+.travel-card:last-child {
+    display: none;
+}
+.travel-card:nth-child(3) {
+    padding-bottom: 0;
 }
 .travel-card__image {
-    position: relative;
     height: 195px;
-}
-.travel-card__img {
-    max-width: 340px;
     width: 100%;
+    display: flex;
+    background-size: cover;
+    @media (min-width: 800px) {
+        height: 218px;
+    }
 }
 .travel-card__price {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    margin-top: auto;
     background-color: $yellow;
     font-family: $museo_3;
     font-size: 18px;
@@ -43,10 +52,14 @@
     line-height: 22px;
     font-family: $museo_2;
     display: inline-block;
+    margin-bottom: 20px;
 }
 .travel-card__route {
     color: #8C8C8C;
     line-height: 13px;
+    max-width: 340px;
+    margin: 0;
+    margin-bottom: 15px;
 }
 .travel-card__discrip {
     display: flex;
@@ -56,7 +69,8 @@
 .travel-card__lang {
     font-style: normal;
 }
-.travel-card__air {
+
+.travel-card__special {
     display: flex;
     justify-content: center;
     align-items: center;
