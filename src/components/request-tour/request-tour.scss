@@ -1,5 +1,6 @@
 .request-tour {
     margin-bottom: 108px;
+    align-items: center;
 }
 .request-tour__title {
     margin-bottom: 27px;
@@ -18,9 +19,41 @@
     padding-bottom: 5px;
     margin-bottom: 31px;
 }
+.request-tour__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 31px;
+    @media (min-width: 715px) {
+        margin-bottom: 35px;
+        &+.request-tour__section {
+            margin-bottom: 40px;
+        }
+    }
+}
 .request-tour__field {
     margin-bottom: 20px;
+    min-width: 340px;
+    max-width: 380px;
+    flex-grow: 1;
     &:last-child {
+        margin-bottom: 0;
+    }
+    @media (min-width: 715px) {
+        margin-bottom: 0;
+    }
+}
+.request-tour__section-cb {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @media (min-width: 715px) {
+        margin-bottom: 0;
+    }
+    &+.request-tour__section-cb {
         margin-bottom: 0;
     }
 }
@@ -31,10 +64,13 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 30px;
-    margin-bottom: 40px;
+    max-width: 340px;
 }
 .request-tour__rich-cbox {
     margin-bottom: 28px;
+    @media (min-width: 715px) {
+        margin-bottom: 40px;
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -44,8 +80,14 @@
     padding: 0;
     margin-left: 30px;
     margin-top: 39px;
+    @media (min-width: 715px) {
+        margin-top: 33px;
+    }
 }
 .request-tour__submit-btn {
     margin-top: 28px;
     margin-left: 30px;
+    @media (min-width: 715px) {
+        margin-top: 40px;
+    }
 }

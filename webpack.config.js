@@ -24,6 +24,10 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './pug/index.pug',
         }),
+        new HTMLWebpackPlugin({
+            template: './pug/page-travel.pug',
+            filename: 'page-travel.html',
+        }),
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, 'src/static'),

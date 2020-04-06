@@ -3,27 +3,32 @@ mixin request-tour(data)
         .request-tour__title
             +title('Заявка на подбор путешествия')
         span.request-tour__section-name НЕМНОГО О ВАС
-        .request-tour__field
-            +input(inputName)
-        .request-tour__field
-            +input(inputModile)
+        .request-tour__section
+            .request-tour__field
+                +input(inputName)
+            .request-tour__field
+                +input(inputModile)
         span.request-tour__section-name О ПУТЕШЕСТВИИ
-        .request-tour__field
-            +input(inputCountry)
-        .request-tour__field
-            +input(inputDate)
-        span.request-tour__section-name УДОБНЫЙ СПОСОБ СВЯЗИ
-        .request-tour__checkboxes
-            +checkbox(cbViber)
-            +checkbox(cbWsapp)
-            +checkbox(cbMail)
-            +checkbox(cbPhone)
-        span.request-tour__section-name ОТКУДА УЗНАЛИ О НАС
-        .request-tour__checkboxes
-            +checkbox(cbWeb)
-            +checkbox(cbFriends)
-            +checkbox(cbSocial)
-            +checkbox(cbUsed)
+        .request-tour__section
+            .request-tour__field
+                +input(inputCountry)
+            .request-tour__field
+                +input(inputDate)
+        .request-tour__section
+            .request-tour__section-cb
+                span.request-tour__section-name УДОБНЫЙ СПОСОБ СВЯЗИ
+                .request-tour__checkboxes
+                    +checkbox(cbViber)
+                    +checkbox(cbWsapp)
+                    +checkbox(cbMail)
+                    +checkbox(cbPhone)
+            .request-tour__section-cb
+                span.request-tour__section-name ОТКУДА УЗНАЛИ О НАС
+                .request-tour__checkboxes
+                    +checkbox(cbWeb)
+                    +checkbox(cbFriends)
+                    +checkbox(cbSocial)
+                    +checkbox(cbUsed)
         .request-tour__richCheckboxes
             .request-tour__rich-cbox
                 +rich-cbox(cbSubscribe)

@@ -6,7 +6,6 @@ h1, h2, h3, body {
 @import './fonts.scss';
 @import './var.scss';
 @import './import.scss';
-
 .page__main {
     display: flex;
     flex-direction: column;
@@ -20,6 +19,9 @@ h1, h2, h3, body {
     padding-top: 34px;
     @media (min-width: 740px) {
         padding-top: 46px;
+    }
+    &--hide {
+        display: none;
     }
 }
 

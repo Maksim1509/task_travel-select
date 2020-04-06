@@ -1,0 +1,20 @@
+mixin page-travel()
+    section.page-travel
+        +menu
+        +header-travel
+        main.header-travel__main
+            section.header-travel__left-column
+                span ВЕСЬ МИР.
+                h2.header-travel__text-formatter--title МАЙСКИЕ КАНИКУЛЫ
+                .header-travel__line
+                acticle.header-travel__text-formatter--acticle Майские выходные - отличный повод отправиться в отпуск! Маршруты на любой вкус по России и миру. Авторские маршруты по Словении, Ирану, Мадагаскару. Маршруты по Турции, Грузии, Италии. Найтите поездку себе по душе!
+                .header-travel__main-bnt
+                    +submit-btn(letsGo)
+            section.header-travel__right-column
+            .header-travel__pagination
+                a(href="http://").header-travel__pagination-item
+                    img.header-travel__pagination-arrow(src="./images/arrowDrop.svg", alt="prev")
+                    span ЕДЕМ НА ЗАПУСК РАКЕТЫ
+                a(href="http://").header-travel__pagination-item
+                    span ТУРЫ ПО КОМЧАТКЕ
+                    img.header-travel__pagination-arrow.header-travel__pagination-arrow--right(src="./images/arrowDrop.svg", alt="next")
