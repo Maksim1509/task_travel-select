@@ -1,18 +1,19 @@
 mixin menu
-    section.menu
-        img(src="./images/close.svg", alt="close").menu__icon-close
-        .menu__dropdowns
-            .menu__dropdown
-                +dropdown(dropdownTest)
-            .menu__dropdown
-                +date-dropdown()
-            .menu__dropdown
-                +dropdown(dropdownTypeTrevel)
-            .mune__btn
+    .menu-wrap
+        section.menu
+            img(src="./images/close.svg", alt="close").menu__icon-close
+            .menu__dropdowns
+                .menu__dropdown
+                    +dropdown(dropdownTest)
+                .menu__dropdown
+                    +date-dropdown()
+                .menu__dropdown
+                    +dropdown(dropdownTypeTrevel)
+                .mune__btn
+                    +submit-btn(submitBtnEmpty)
+            .menu__nav
+                +nav-menu(navMenuItems)
+            span.menu__tel +7 (495) 123-45-67 
+            .menu__submit
                 +submit-btn(submitBtnEmpty)
-        .menu__nav
-            +nav-menu(navMenuItems)
-        span.menu__tel +7 (495) 123-45-67 
-        .menu__submit
-            +submit-btn(submitBtnEmpty)
         

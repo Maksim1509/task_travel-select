@@ -1,7 +1,20 @@
+.menu-wrap {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 10000px;
+    z-index: 1;
+    top: 0;
+    &--show {
+        right: 0;
+    }
+}
+
 .menu {
     position: absolute;
-    left: -1000px;
     top: 0;
+    right: 0;
     background: $yellow;
     width: 100%;
     min-width: 320px;
@@ -9,13 +22,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    
 }
-.menu--show {
-    right: 0;
-    left: auto;
-}
-
 .menu__icon-close {
     width: 24.75px;
     height: 24.75px;

@@ -6,6 +6,7 @@ h1, h2, h3, body {
 @import './fonts.scss';
 @import './var.scss';
 @import './import.scss';
+
 .page__main {
     display: flex;
     flex-direction: column;
@@ -20,25 +21,4 @@ h1, h2, h3, body {
     @media (min-width: 740px) {
         padding-top: 46px;
     }
-    &--hide {
-        display: none;
-    }
 }
-
-.test {
-    font-family: $museo;
-}
-
-.test_0 {
-    font-family: $museo_0;
-}
-.test_1 {
-    font-family: $museo_1;
-}
-.test_2 {
-    font-family: $museo_2;
-}
-.test_3 {
-    font-family: $museo_3;
-}
-
