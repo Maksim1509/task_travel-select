@@ -10,14 +10,13 @@
     background: #FFFFFF;
     border-radius: 29.5px;
     flex-wrap: wrap;
-    // 
     position: relative;
     &--open {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
 }
-//
+
 .datepicker-inline {
     position: absolute;
     top: 30px;
@@ -65,7 +64,6 @@
     &--show {
         display: block;
     }
-    //
     padding-bottom: 18px;
 }
 .datepicker-inline {
